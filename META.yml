@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                HTML-Widget-Plugin-Combo
-version:             0.001
+version:             0.002
 abstract:            a JavaScript combo box widget
 license:             perl
 generated_by:        ExtUtils::MakeMaker version 6.31
