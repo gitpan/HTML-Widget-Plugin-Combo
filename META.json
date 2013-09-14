@@ -45,16 +45,16 @@
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/rjbs/html-widget-plugin-combo/issues"
+         "web" : "https://github.com/rjbs/HTML-Widget-Plugin-Combo/issues"
       },
-      "homepage" : "https://github.com/rjbs/html-widget-plugin-combo",
+      "homepage" : "https://github.com/rjbs/HTML-Widget-Plugin-Combo",
       "repository" : {
          "type" : "git",
-         "url" : "https://github.com/rjbs/html-widget-plugin-combo.git",
-         "web" : "https://github.com/rjbs/html-widget-plugin-combo"
+         "url" : "https://github.com/rjbs/HTML-Widget-Plugin-Combo.git",
+         "web" : "https://github.com/rjbs/HTML-Widget-Plugin-Combo"
       }
    },
-   "version" : "0.003",
+   "version" : "0.004",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.019003"

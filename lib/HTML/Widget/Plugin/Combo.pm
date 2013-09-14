@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package HTML::Widget::Plugin::Combo;
 {
-  $HTML::Widget::Plugin::Combo::VERSION = '0.003';
+  $HTML::Widget::Plugin::Combo::VERSION = '0.004';
 }
 use parent qw(HTML::Widget::Plugin);
 # ABSTRACT: a JavaScript combo box widget
@@ -157,7 +157,7 @@ HTML::Widget::Plugin::Combo - a JavaScript combo box widget
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head2 combo
 

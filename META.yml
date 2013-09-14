@@ -22,10 +22,10 @@ requires:
   strict: 0
   warnings: 0
 resources:
-  bugtracker: https://github.com/rjbs/html-widget-plugin-combo/issues
-  homepage: https://github.com/rjbs/html-widget-plugin-combo
-  repository: https://github.com/rjbs/html-widget-plugin-combo.git
-version: 0.003
+  bugtracker: https://github.com/rjbs/HTML-Widget-Plugin-Combo/issues
+  homepage: https://github.com/rjbs/HTML-Widget-Plugin-Combo
+  repository: https://github.com/rjbs/HTML-Widget-Plugin-Combo.git
+version: 0.004
 x_Dist_Zilla:
   perl:
     version: 5.019003
