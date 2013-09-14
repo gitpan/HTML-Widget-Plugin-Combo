@@ -1,40 +1,16 @@
-
 use strict;
 use warnings;
-
 package HTML::Widget::Plugin::Combo;
-use base qw(HTML::Widget::Plugin);
-
-=head1 NAME
-
-HTML::Widget::Plugin::Combo - a JavaScript combo box widget
-
-=head1 VERSION
-
-version 0.002
-
- $Id: Combo.pm 26438 2006-12-14 22:00:03Z rjbs $
-
-=cut
-
-our $VERSION = '0.002';
+{
+  $HTML::Widget::Plugin::Combo::VERSION = '0.003';
+}
+use parent qw(HTML::Widget::Plugin);
+# ABSTRACT: a JavaScript combo box widget
 
 use Data::JavaScript::Anon;
 
 sub provided_widgets { qw(combo) }
 
-=head2 combo
-
-This widget produces a combo box.  It's a select box with an option for "other"
-that causes it to be replaced with a text input box.
-
-Valid arguments are:
-
-  id      - required
-  options - as per select widget
-  value   - as per select widget
-
-=cut
 
 sub combo {
   my ($self, $factory, $arg) = @_;
@@ -78,11 +54,6 @@ sub combo {
   ;
 }
 
-=head2 per_combo_js
-
-This method returns JavaScript to be run after each combo box is defined.
-
-=cut
 
 # always included; hides the hidden startup field
 sub per_combo_js {
@@ -104,11 +75,6 @@ sub per_combo_js {
 END_JAVASCRIPT
 }
 
-=head2 per_page_js
-
-This method returns JavaScript to be run once per page.
-
-=cut
 
 # provides the main routines, object
 sub per_page_js {
@@ -179,16 +145,48 @@ function combo_toggle(element_name) {
 END_JAVASCRIPT
 }
 
-=head2 AUTHOR
+1;
 
-This code was written by Ricardo SIGNES.  Its development in 2006 was sponsored
-by Listbox.
+__END__
 
-=head2 COPYRIGHT
+=pod
 
-This code is copyright (c) 2006, Ricardo SIGNES.  It is free software,
-available under the same terms as perl itself.
+=head1 NAME
+
+HTML::Widget::Plugin::Combo - a JavaScript combo box widget
+
+=head1 VERSION
+
+version 0.003
+
+=head2 combo
+
+This widget produces a combo box.  It's a select box with an option for "other"
+that causes it to be replaced with a text input box.
+
+Valid arguments are:
+
+  id      - required
+  options - as per select widget
+  value   - as per select widget
+
+=head2 per_combo_js
+
+This method returns JavaScript to be run after each combo box is defined.
+
+=head2 per_page_js
+
+This method returns JavaScript to be run once per page.
+
+=head1 AUTHOR
+
+Ricardo SIGNES
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2006 by Ricardo SIGNES.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
-
-1;

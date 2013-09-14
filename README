@@ -1,19 +1,13 @@
-HTML-Widget-Plugin-Combo
 
-INSTALLATION
 
-To install this module, run the following commands:
+This archive contains the distribution HTML-Widget-Plugin-Combo,
+version 0.003:
 
-    perl Makefile.PL
-    make
-    make test
-    make install
+  a JavaScript combo box widget
 
-COPYRIGHT AND LICENCE
+This software is copyright (c) 2006 by Ricardo SIGNES.
 
-Put the correct copyright and licence information here.
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
-Copyright (C) 2005 Ricardo Signes
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
